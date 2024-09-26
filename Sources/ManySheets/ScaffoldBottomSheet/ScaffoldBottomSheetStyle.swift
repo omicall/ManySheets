@@ -9,6 +9,7 @@
 import Foundation
 import SwiftUI
 
+@available(iOS 15, *)
 public struct ScaffoldBottomSheetStyle {
     public let backgroundColor: Color
     public let cornerRadius: CGFloat
@@ -47,7 +48,7 @@ public struct ScaffoldBottomSheetStyle {
 }
 
 // MARK: - Default BottomSheet style extension
-
+@available(iOS 15, *)
 extension ScaffoldBottomSheetStyle {
     public static func defaultStyle() -> ScaffoldBottomSheetStyle {
         ScaffoldBottomSheetStyle(
