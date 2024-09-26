@@ -9,6 +9,7 @@
 import Foundation
 import SwiftUI
 
+@available(iOS 15, *)
 public struct ScaffoldBottomSheetPositions {
     public let top: CGFloat
     public let middle: CGFloat
@@ -25,6 +26,7 @@ public struct ScaffoldBottomSheetPositions {
     }
 }
 
+@available(iOS 15, *)
 extension ScaffoldBottomSheet {
     public enum Position {
         case top
@@ -33,6 +35,7 @@ extension ScaffoldBottomSheet {
     }
 }
 
+@available(iOS 15, *)
 extension ScaffoldBottomSheet {
     public enum Options: Equatable {
         /// Adds a handle bar to our bottom sheet
@@ -72,7 +75,7 @@ extension ScaffoldBottomSheet {
     }
 }
 
-
+@available(iOS 15, *)
 public struct ScaffoldBottomSheet<Header: View, Body: View>: View {
     
     @Binding var isOpen: Bool
@@ -240,6 +243,7 @@ public struct ScaffoldBottomSheet<Header: View, Body: View>: View {
 
 // MARK: - DragGesture onDragEnded extension
 
+@available(iOS 15, *)
 extension ScaffoldBottomSheet {
 
     private func onDragEnded(drag: DragGesture.Value, height: CGFloat) {
@@ -292,7 +296,7 @@ extension ScaffoldBottomSheet {
 }
 
 // MARK: - SizePreferenceKey
-
+@available(iOS 15, *)
 struct SizePreferenceKey: PreferenceKey {
     static var defaultValue: CGSize = .zero
 
