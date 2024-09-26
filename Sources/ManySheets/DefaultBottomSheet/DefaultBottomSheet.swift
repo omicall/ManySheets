@@ -9,6 +9,7 @@
 import Foundation
 import SwiftUI
 
+@available(iOS 15, *)
 extension DefaultBottomSheet {
     public enum Options: Equatable {
         /// Adds a handle bar to our bottom sheet
@@ -25,7 +26,7 @@ extension DefaultBottomSheet {
 }
 
 // MARK: - DefaultBottomSheet.Option flags
-
+@available(iOS 15, *)
 extension DefaultBottomSheet {
     private var hasHandleBar: Bool {
         options.contains(.enableHandleBar)
@@ -49,7 +50,7 @@ extension DefaultBottomSheet {
 }
 
 // MARK: - DefaultBottomSheetView
-
+@available(iOS 15, *)
 public struct DefaultBottomSheet<Content: View>: View {
 
     @Binding var isOpen: Bool
@@ -157,7 +158,7 @@ public struct DefaultBottomSheet<Content: View>: View {
 }
 
 // MARK: - DragGesture onDragChanged & onDragEnded extensions
-
+@available(iOS 15, *)
 extension DefaultBottomSheet {
     
     private func dragGesture() -> _EndedGesture<_ChangedGesture<DragGesture>> {
