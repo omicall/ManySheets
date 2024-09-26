@@ -52,7 +52,7 @@ extension ScaffoldBottomSheet {
 }
 
 // MARK: - ScaffoldBottomSheet.Option flags
-
+@available(iOS 15, *)
 extension ScaffoldBottomSheet {
     private var hasHandleBar: Bool {
         options.contains(.enableHandleBar)
