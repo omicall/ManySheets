@@ -10,7 +10,7 @@ import Foundation
 import SwiftUI
 
 // MARK: - RoundedCorners
-
+@available(iOS 15, *)
 struct RoundedCorner: Shape {
     var radius: CGFloat = .infinity
     var corners: UIRectCorner = .allCorners
@@ -20,7 +20,7 @@ struct RoundedCorner: Shape {
         return Path(path.cgPath)
     }
 }
-
+@available(iOS 15, *)
 extension View {
     func cornerRadius(_ radius: CGFloat, corners: UIRectCorner) -> some View {
         clipShape(RoundedCorner(radius: radius, corners: corners))
@@ -28,7 +28,7 @@ extension View {
 }
 
 // MARK: - Blur effect view
-
+@available(iOS 15, *)
 internal struct VisualEffectView: UIViewRepresentable {
     
     internal let effect: UIVisualEffect
