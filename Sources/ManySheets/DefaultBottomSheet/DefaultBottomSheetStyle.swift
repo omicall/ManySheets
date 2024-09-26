@@ -9,6 +9,7 @@
 import Foundation
 import SwiftUI
 
+@available(iOS 15, *)
 public struct DefaultBottomSheetStyle {
     public let backgroundColor: Color
     public let cornerRadius: CGFloat
@@ -47,7 +48,7 @@ public struct DefaultBottomSheetStyle {
 }
 
 // MARK: - Default BottomSheet style extension
-
+@available(iOS 15, *)
 extension DefaultBottomSheetStyle {
     public static func defaultStyle() -> DefaultBottomSheetStyle {
         DefaultBottomSheetStyle(
