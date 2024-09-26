@@ -9,6 +9,7 @@
 import Foundation
 import SwiftUI
 
+@available(iOS 15, *)
 public extension View {
     
     /// A modifier to add a `DefaultBottomSheet `to your view.
